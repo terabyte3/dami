@@ -1,20 +1,17 @@
-If you are looking for deelay ruby gem, you can find it [here](https://github.com/biesiad/deelay-ruby).
+# [dami]
 
-# [Deelay.me](http://deelay.me)
+**💰 inline cache proxy for http resources**
+slow loading resources (images, scripts, etc) can break your code. fix this by caching them.
 
-[![CircleCI](https://circleci.com/gh/biesiad/deelay.svg?style=svg)](https://circleci.com/gh/biesiad/deelay)
-
-**Inline delay proxy for http resources**
-Slow loading resources (images, scripts, etc) can break your code. Test it simulating unexpected network conditions applied to specific resource.
-
-## Local installation
+## run locally
 ```sh
-$ npm install -g deelay
-$ deelay
-Starting delay on port 4567
+$ git clone https://github.com/terabyte3/dami
+$ cd dami
+$ bun run index.js
+[i] starting dami on port 8000
 ```
 
-## Docker installation
+## docker installation
 ```sh
 $ docker build -t deelay .
 $ docker run -p 4567:4567 deelay

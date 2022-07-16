@@ -5,12 +5,9 @@
   "repository": "https://github.com/biesiad/deelay",
   "homepage": "http://www.deelay.me/",
   "main": "index.js",
-  "bin": {
-    "deelay": "bin/deelay.js"
-  },
-  "scripts": {
-    "test": "node test/indexTest.js"
-  },
-  "author": "Grzegorz Biesiadecki",
-  "license": "MIT"
+  "author": "thrzl.",
+  "license": "MIT",
+  "dependencies": {
+    "@brokerloop/ttlcache": "^3.2.3"
+  }
 }

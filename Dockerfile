@@ -1,7 +1,7 @@
-FROM node:8-alpine
+FROM alpine:latest
+FROM jarredsumner/bun:edge
 
-ENV APP_DIR /app
-RUN mkdir ${APP_DIR}
-WORKDIR ${APP_DIR}
-ADD . ${APP_DIR}
-CMD ["./bin/deelay.js"]
+COPY . ./
+EXPOSE 8000
+
+CMD bun run index.js
